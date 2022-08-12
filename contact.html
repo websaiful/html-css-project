@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/8f037f1f1d.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .all-parent{
+            width: 1000px;
+            margin: auto;
+        }
+        .contact-title{
+            text-align: center;
+        }
+        .contact-title h2{
+            text-transform: capitalize;
+        }
+        .contact-title h4{
+            text-transform: capitalize;
+            color: gray;
+            letter-spacing: 0.3em;
+            margin-top: 10px;
+        }
+        .contact-form{
+            background-color: #EAECF0;
+            display: flex;
+            
+        }
+        .form-tag{
+            width: 600px;
+        }
+        .input-parent{
+            display: flex;
+        }
+        .input-parent input{
+            width: 200px;
+            height: 40px;
+            margin: 0px 20px;
+            border: none;
+            padding: 0px 10px;
+        }
+        .input-parent h4{
+            text-transform: capitalize;
+            margin: 20px 0px 10px 20px;
+        }
+        .input-title{
+            text-transform: capitalize;
+            margin: 20px 0px 10px 20px;
+        }
+        .input-subject{
+            width: 85%;
+            height: 40px;
+            margin: 0px 20px;
+            border: none;
+        }
+        .text-area{
+            width: 85%;
+            height: 100px;
+            border: none;
+            margin: 0px 20px;
+        }
+        .input-button{
+            display: block;
+            margin: 20px 0px 20px 20px;
+            padding:5px 20px;
+            background-color: #3552AF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: capitalize;
+        }
+        .address-parent{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .icon-div i{
+            background-color: #3552AF;
+            padding: 10px;
+            color:#fff;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="all-parent">
+            <div class="contact-title">
+                <h2>contact us</h2>
+                <h4>contat form</h4>
+            </div>
+            <div class="contact-form">
+                <form class="form-tag">
+                    <div class="input-parent">
+                        <div>
+                            <h4>full name</h4>
+                            <input type="text" placeholder="full name">
+                        </div>
+                        <div>
+                            <h4>E-mail address</h4>
+                            <input type="email" placeholder="Enter Email">
+                        </div>
+                        
+                        
+                    </div>
+                    <h4 class="input-title">subject</h4>
+                    <input class="input-subject" type="text">
+                    <h4 class="input-title">message</h4>
+                    <textarea class="text-area" ></textarea>
+                    <input class="input-button" type="button" value="submit">
+                </form>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.8052568179896!2d91.11516771445046!3d23.467488105442953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37547b1a41fcf2c1%3A0x6d818caf0c87bc75!2sCumilla%20Cantonment!5e0!3m2!1sen!2sbd!4v1656597035836!5m2!1sen!2sbd" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+
+            </div>
+            <div class="address-parent">
+                <div class="icon-div">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><b>Address:</b>cumilla cantonment</p>
+                    
+                </div>
+                <div class="icon-div">
+                    <i class="fas fa-phone-alt"></i>
+                    <p><b>Phone:</b>017xxxxxxxxx</p>
+                </div>
+                <div class="icon-div">
+                    <i class="far fa-envelope"></i>
+                    <p><b>E-mail:</b>kuco@gamil.com</p>
+                </div>
+                <div class="icon-div">
+                    <i class="fas fa-globe"></i>
+                    <p><b>Website:</b>www.websaiful.com</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

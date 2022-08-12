@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <script src="https://kit.fontawesome.com/8f037f1f1d.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            background-image: linear-gradient(black,rgba(0, 255, 255, 0.904));
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav >ul{
+            margin-right: 100px;
+            display: flex;
+        }
+        nav > ul> li{
+            list-style-type: none;
+            margin: 20px 0px;
+            position: relative;
+            
+        }
+        
+        nav > ul> li > a{
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 20px;
+            color: #fff;
+            border-right: 2px solid white;
+            padding-right: 10px;
+            padding: 20px 15px;
+            
+            
+        }
+        nav > ul > li > a:hover{
+            background-color: crimson;
+
+        }
+        .first-child{
+            border-left: 2px solid white;
+            padding-left: 20px;
+        }
+     
+       nav > .logo{
+        margin-left: 100px;
+        font-size: 20px;
+        text-transform: capitalize;
+
+        }
+        nav > .logo >h2::first-letter{
+            color:blue;
+            font-size: 50px;
+        }
+        /*drpdawon code start here*/
+        .moto-patlo{
+            background-color: blueviolet;
+            width: 180px;
+            margin-top: 20px;
+            text-align: center;
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.5s;
+            transform:scaleY(0);
+            transform-origin: top;
+            
+        }
+        .moto-patlo> li{
+            list-style: none;
+            border-bottom: 2px solid #fff;
+            border-top: 2px solid white;
+            
+            
+        }
+        
+        .moto-patlo > li > a{
+            text-decoration: none;
+            font-size: 20px;
+            
+        }
+        .moto-patlo > li:hover{
+            background-color: cyan;
+            padding: 0px 54px;
+        }
+        nav > ul > li:hover ul{
+            opacity: 1;
+            visibility: visible;
+            box-shadow: 5px 5px 10px gray;
+            transform: scaleY(1);
+           
+        }
+        /*hero area code start here*/
+        .container{
+            text-align: center;
+            background-image: url(HD-Featured-Image.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 90vh;
+        }
+        .parent{
+            padding: 150px 0px;
+        }
+        .parent h1{
+            width: 450px;
+            margin: 0px auto;
+            background-color: brown;
+            padding: 20px 0px;
+            border-radius: 10px;
+            text-transform: capitalize;
+            color: #fff;
+            box-shadow: -5px -5px 10px rgba(14, 184, 196, 0.822);
+            
+        }
+        .parent h4{
+            margin-bottom: 10px;
+            text-transform: capitalize;
+            font-size: 20px;
+            color: #fff;
+        }
+        .parent h5{
+            margin-top: 10px;
+            text-transform: capitalize;
+            font-size: 15px;
+            color:#fff;
+        }
+        .icon{
+            margin: 10px 0px;
+        }
+        .icon i{
+            font-size: 30px;
+            width: 30px;
+    height: 30px;
+    background-color: rgba(212, 20, 20, 0);
+    padding: 5px;
+    line-height: 1;
+    border-radius: 50%;
+    border: 2px solid rgba(247, 242, 242, 0.993);
+    color:white;
+    transition: 0.5s;
+        }
+        .icon i:hover{
+            background-color: red;
+            transform: rotate(360deg);
+
+        }
+        button{
+            margin: 10px 0px;
+            padding: 10px 30px;
+            text-transform: capitalize;
+            color: #fff;
+            border-radius: 5px;
+            background-color: crimson;
+            border: none;
+            cursor:pointer;
+            font-size: 15px;
+            transition: 1s;
+        }
+        button:hover{
+            background-color: #fff;
+            color:black;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>web.saiful</h2>
+            </div>
+            <ul>
+                <li><a class="first-child" href="#">home</a>
+                <ul class="moto-patlo">
+                    <li><a href="#">home1</a></li>
+                    <li><a href="#">home2</a></li>
+                    <li><a href="#">home3</a></li>
+                    <li><a href="#">home4</a></li>
+                    <li><a href="#">home5</a></li>
+                </ul>
+                </li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">contact us</a></li>
+                <li><a href="#">feedback</a></li>
+            </ul>
+        </nav>
+        <!------- hero area start here ----------->
+        <div class="container">
+            <div class="parent">
+                <h4>you can learn with us</h4>
+                <h1>welcom to programming saiful </h1>
+                <h5>with a lot of language</h5>
+                <div class="icon">
+                    <i class="fab fa-facebook"></i>
+
+
+                </div>
+<button> purchess  our course</button>
+            </div>
+
+        </div>
+    </header>
+    
+</body>
+</html>

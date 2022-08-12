@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>user login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+     <script src="js/bootstrap.min.js"></script>
+     <style>
+         html,body{
+             height: 100%;
+         }
+         body{
+             background-image: url(user.jpg);
+             background-size: cover;
+         }
+         .form-login{
+             background: rgba(236,240,241,.35);
+             width: 100%;
+             max-width: 450px;
+             border-radius: 10px;
+             margin:auto;
+             padding: 20px;
+                 
+         }
+    
+    </style>
+</head>
+<body class="d-flex">
+    <form action="" class="form-login text-center">
+       <h2>user Login</h2>
+        <input type="email" placeholder="enter your email address" class="form-control mb-3" required>
+        <input type="password" placeholder="enter your password" class="form-control mb-3">
+       
+        <div class="checkbox mb-3">
+            <label for="">
+                <input type="checkbox" required> remember me
+            </label>
+            
+        </div>
+        <a href="http://127.0.0.1:5500/regis.html?"><button class=" btn btn-primary w-100" type="submit">Log In</button>
+        </a>
+        
+        
+        
+    </form>
+</body>
+</html>
