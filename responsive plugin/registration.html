@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive registration form</title>
+    <script src="https://kit.fontawesome.com/8f037f1f1d.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-transform: capitalize;
+            /* box-sizing: border-box; */
+        }
+        body{
+            background-color: #EAECF0;
+            
+        }
+        .perent-div{
+            width: 450px;
+            margin: 50px auto;
+            /* border: 1px solid red; */
+            background-color: #fff;
+            padding-bottom: 40px;
+            padding-left: 25px;
+            padding-right: 20px;
+            border-radius: 5px;
+            box-shadow:  5px 5px  5px 6px gray;
+            position: relative;
+           
+            
+           
+            
+           
+        }
+        .icon{
+            border: 1px solid gray;
+            padding: 6px 5px 8px 5px;
+            /* padding-bottom: 1px; */
+            margin-top: 2px;
+            
+        }
+        .input1{
+            padding: 7px 0;
+            width: 400px;
+            border: 1px solid gray;
+            outline: none;
+            padding-left: 10px;
+            
+        }
+        .input2{
+            width: 165px;
+            padding: 7px 0px ;
+            padding-left: 10px;
+            outline: none;
+        }
+        .input3{
+            width: 170px;
+            padding: 7px 0px ;
+            padding-left: 10px;
+            outline: none;
+        }
+        select{
+            width: 430px;
+            padding: 7px 0 ;
+            
+        }
+        .submit{
+            padding: 7px 0;
+            width: 430px;
+            font-size: 15px;
+            color: #fff;
+            background-color: #f39c12;
+            border: none;
+            outline: none;
+        }
+          .perent-div input:nth-child(2){
+          padding-left: 10px;
+          }
+          
+          h1{
+            text-align: center;
+            padding: 15px 0;
+          }
+          select option:first-child{
+            color: gray;
+          }
+          .show-hide{
+            position: absolute;
+            top: 130px;
+            right: 40px;
+            color: gray;
+          }
+          .show{
+            position: absolute;
+            top: 180px;
+            right: 40px;
+            color: gray;
+          }
+
+          
+    </style>
+</head>
+<body>
+    <div class="perent-div">
+        <h1>registration form</h1>
+        <form>
+            <i class="fas fa-envelope icon" ></i><input class="input1" type="email" placeholder="email"><br><br>
+            <i class="fas fa-lock icon"></i><input class="input1" id="input" type="password" placeholder="password"><br><br>
+            <i class="fas fa-lock icon"></i><input class="input1" id="input2" type="password" placeholder="re-type password"><br><br>
+            <i class="fas fa-user icon"></i><input class="input2" type="text" placeholder="first name">&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-user icon"></i><input class="input3" type="text" placeholder="last name"><br><br>
+            <input class="male" type="radio" name="gender"> male <input type="radio" name="gender"> female <br><br>
+            <select>
+                <option  selected>select &nbsp; a country</option>
+                <option >australia</option>
+                <option >japan</option>
+                <option >canada</option>
+            </select><br><br>
+            <input type="checkbox" name="check"> i agree with terms and condition<br><br>
+            <input type="checkbox" name="check"> i want to receive the newslatter<br><br>
+            <input class="submit" type="submit" value="register">
+        </form>
+        <i class="fa-solid fa-eye show-hide" onclick="show()"></i>
+        <i class="fa-solid fa-eye show" onclick="hide()"></i>
+    </div>
+    <script>
+        function show(){
+            var pass = document.getElementById('input');
+            if(pass.type == 'password'){
+                pass.type = 'text';
+            }else{
+                pass.type = 'password';
+            }
+        }
+        function hide(){
+            var pass = document.getElementById('input2');
+            if(pass.type == 'password'){
+                pass.type = 'text';
+            }else{
+                pass.type = 'password';
+            }
+        }
+    </script>
+</body>
+</html>
