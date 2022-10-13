@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,500;0,600;1,700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Anton;
+        }
+        .container{
+            background-color: #1e272e;
+            margin-top: 50px;
+            margin-left: 450px;
+            margin-right:450px;
+            padding: 20px;
+            text-transform: capitalize;
+            border-radius: 5px;
+
+           
+
+        }
+        .input{
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            height: 30px;
+            background: none;
+            outline: none;
+            color: #fff;
+
+        }
+        .input::placeholder{
+            padding-left: 15px;
+            text-transform: capitalize;
+            color: #fff;
+        }
+        .submit{
+            display: block;
+            margin: 15px auto;
+            padding: 10px 30px;
+            font-size: 20px;
+            text-transform: capitalize;
+            cursor: pointer;
+            font-family: Anton;
+        }
+        .title h2{
+            text-align: center;
+            padding: 20px 0;
+            font-weight: 1000;
+            font-size: 40px;
+            background: none;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 3px black;
+            letter-spacing: .2em;
+            color: #fff;
+           
+        }
+        #section{
+            background-image: url('img/photo-1553095066-5014bc7b7f2d.jpg');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            padding: 100px 0;
+        }
+        @media only screen and (max-width:688px){
+            .container{
+             margin-left: 30px;
+             margin-right: 30px;
+             margin-top: 180px;
+              
+               
+            }
+        }
+        @media only screen and (min-width:689px) and (max-width:999px){
+            .container{
+               
+                margin-left: 90px;
+                margin-right: 90px;
+                margin-top: 200px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section id="section">
+            <div class="container">
+                <div class="title">
+                    <h2>user log in</h2>
+                </div>
+              
+                <form>
+                    <input class="input" type="email" placeholder="input your email">
+                    <input class="input" id="pass" type="password" placeholder="input your password">
+                    <input onclick="show()" type="checkbox"> show password
+                    <input class="submit" type="submit" value="log in">
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+          function show(){
+            var pass = document.getElementById('pass');
+            if(pass.type=='password'){
+                pass.type = 'text';
+            }else{
+                pass.type = 'password';
+            }
+          }
+    </script>
+</body>
+</html>
