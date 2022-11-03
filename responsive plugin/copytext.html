@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident velit, illum reprehenderit iste dolores saepe tenetur consectetur sed. Possimus, alias.</p>
+    <button id="btn">click me to copy text</button>
+    <p id="pera">note: akahne button system kore button ar vitor click event caliye amra input othoba kono peragraph ar text copy korate pari othoba jei text ta copy korate chai setar (id) ta dhore click event caliye amra text copy korate pari orthat text ar opor click dile text ta copy hoye jabe</p>
+
+    <script>
+        var copy = document.getElementById('text'); 
+        var btn = document.getElementById('btn');
+        btn.addEventListener('click', function(){
+            navigator.clipboard.writeText(copy.innerHTML);
+            alert('text copy success');
+        });
+        var peracopy = document.getElementById('pera');
+        peracopy.addEventListener('click',function(){
+            navigator.clipboard.writeText(peracopy.innerHTML);
+            alert('text copy success');
+        });
+    </script>
+</body>
+</html>
